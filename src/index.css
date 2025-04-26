@@ -1,0 +1,314 @@
+@import "tailwindcss";
+/* Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #4f46e5, #3b82f6);
+  padding: 15px 30px;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+body{
+  font-family: cursive;
+
+}
+
+.navbar-left {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.navbar-center {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.projheading{
+  align-items: center;
+}
+
+/* Dashboard.css */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.proj-heading {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.add-project {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.project-input {
+  padding: 10px;
+  width: 250px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: #4338ca;
+}
+
+.no-projects {
+  font-size: 18px;
+  color: #666;
+}
+
+.project-list {
+  list-style: none;
+  padding: 0;
+  width: 300px;
+}
+
+.project-item {
+  font-size: 20px;
+  padding: 10px;
+  background: #f0f0f0;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.project-item:hover {
+  background: #e0e0e0;
+}
+
+/* TaskForm.css */
+.task-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  margin: 20px auto;
+}
+
+.task-input, .task-select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.task-select {
+  background-color: white;
+}
+
+.task-button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.task-button:hover {
+  background-color: #45a049;
+}
+.task-heading{
+  font-size: 40px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 900;
+
+}
+
+
+/* TaskList.css */
+.task-list-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  width: 90%;
+  max-width: 800px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  background: #f4f4f4;
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  gap: 20px; /* space between columns */
+}
+
+.task-number {
+  font-weight: bold;
+}
+
+.task-title {
+  flex: 2;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.task-description {
+  flex: 3;
+  font-size: 14px;
+  color: #555;
+}
+
+.task-status {
+  flex: 1;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.task-status.pending {
+  background-color: #ffeb3b;
+  color: #333;
+}
+
+.task-status.inprogress {
+  background-color: #2196f3;
+  color: white;
+}
+
+.task-status.completed {
+  background-color: #4caf50;
+  color: white;
+}
+.project-task{
+  font-size: 50px;
+  font-weight: 800;
+  font-family: cursive;
+  text-align: center;
+}
+
+
+.login-container {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-form label {
+  text-align: left;
+  font-weight: 500;
+}
+
+.login-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-form button {
+  padding: 10px;
+  background-color: #0d47a1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #093170;
+}
+
+
+.signup-container {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fdfdfd;
+  text-align: center;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.signup-form label {
+  text-align: left;
+  font-weight: 500;
+}
+
+.signup-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.signup-form button {
+  padding: 10px;
+  background-color: #00695c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signup-form button:hover {
+  background-color: #004d40;
+}
